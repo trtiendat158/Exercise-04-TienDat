@@ -55,5 +55,39 @@ namespace ClassEx04_Test
             int result8 = Program.Cube(3);
             Assert.AreEqual(27, result8);
         }
+
+        [TestMethod]
+        public void Pow()
+        {
+            int result2 = Program.Pow(5, 2);
+            Assert.AreEqual(25, result2);
+
+            int resultAm3 = Program.Pow(-3, 2);
+            Assert.AreEqual(9, resultAm3);
+
+            int resultAm4 = Program.Pow(-4, 5);
+            Assert.AreEqual(-1024, resultAm4);
+
+            int result8 = Program.Pow(8, -2);
+            Assert.AreEqual(1 / 64, result8);
+
+            int result0 = Program.Pow(10, 0);
+            Assert.AreEqual(1, result0);
+        }
+
+        [TestMethod]
+        public void Abs()
+        {
+            int result2 = Program.Abs(2);
+            Assert.AreEqual(2, result2);
+
+            int resultAm2 = Program.Abs(-2);
+            Assert.AreEqual(2, resultAm2);
+
+            int result0 = Program.Abs(0);
+            Assert.AreEqual(0, result0);
+        }
+
+       
     }
 }
