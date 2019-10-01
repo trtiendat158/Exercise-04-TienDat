@@ -88,6 +88,38 @@ namespace ClassEx04_Test
             Assert.AreEqual(0, result0);
         }
 
-       
+        [TestMethod]
+        public void Ceil()
+        {
+            int result1 = Program.Ceil((float)2.3);
+            Assert.AreEqual(3, result1);
+
+            int result2 = Program.Ceil(-2.3f);
+            Assert.AreEqual(-2, result2);
+
+        }
+
+         [TestMethod]
+        public void Floor()
+        {
+            int result1 = Program.Floor((float)2.3);
+            Assert.AreEqual(2, result1);
+
+            int result2 = Program.Floor(-2.3f);
+            Assert.AreEqual(-3, result2);
+        }
+
+         [TestMethod]
+         public void Factorial()
+         {
+             long result2 = Program.Factorial(2);
+             Assert.AreEqual(2, result2);
+
+             long result3 = Program.Factorial(3);
+             Assert.AreEqual(6, result3);
+
+             long result0 = Program.Factorial(0);
+             Assert.AreEqual(1, result0);
+         }
     }
 }
